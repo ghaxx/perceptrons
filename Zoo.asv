@@ -1,0 +1,18 @@
+function [p t] = Zoo
+	fid = fopen('zoo.data');
+ 	C = textscan(fid, '%s %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d', 'delimiter', ',');
+	C{3}
+	size_ans = size(C{18})
+	t = zeros(7, size_ans(1));
+	for i=1:size_ans(1)
+		t(C{18}(i), i) = 1;
+	end
+	
+	p = zeros(16, size_ans(1));
+	for i=2:17
+		for i=1:size_ans(1)
+			p(i, )
+		end
+	end
+	
+end
